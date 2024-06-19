@@ -1311,6 +1311,10 @@
     border-radius: 5%;
   }
 
+/*--------------------------------------------------------------
+# Arreglos extra
+--------------------------------------------------------------*/
+
   .texto {
     padding-top: 15px;
     font-size: 18px;
@@ -1325,3 +1329,130 @@
     max-height: 100%;
     display: inline-block;
   }
+
+  
+  .col-md-7 {
+    padding: 20px;
+  }
+
+  /* 
+--------------------- Slider ---------------------
+*/
+  
+  .slider {
+    height:350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* 
+--------------------- Slider1 ---------------------
+*/
+
+.slider1 {
+    height:400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider1 img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider1 img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* 
+--------------------- Slider2 ---------------------
+*/
+
+.slider2 {
+    height:400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider2 img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider2 img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+
+  @media (max-width: 425px) {
+    .slider {
+        height:200px
+      }
+    .slider1 {
+    height:230px
+    }
+    .slider2 {
+        height:230px
+      }
+}
+
+  
+  
+  .slider-controls {
+    position: absolute; /* Posiciona los botones de forma absoluta */
+    top: 50%; /* Posiciona verticalmente en el centro */
+    transform: translateY(-50%); /* Compensa la mitad del alto */
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 2; /* Asegura que los controles estén por encima de las imágenes */
+  }
+  
+  .slider-control {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px; /* Ajusta el tamaño de las flechas */
+    color: white; /* Ajusta el color de las flechas */
+    z-index: 3; /* Asegura que los botones estén por encima de las imágenes */
+    opacity: 0.7;
+  }
+  
+  .slider-control:hover {
+    opacity: 1; /* Efecto de opacidad al pasar el cursor */
+  }
+  
