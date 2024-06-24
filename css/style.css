@@ -1335,6 +1335,49 @@
     padding: 20px;
   }
 
+  .card {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .blockquote {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .blockquote-footer {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+  }
+
+
+#divcarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+@media (max-width: 575px) {
+    
+    #divcarousel{
+        display: block;
+        justify-content: none;
+        align-items: normal;
+        height: 600px;
+        margin-top: 30px;
+    }
+    .card-text{
+        font-size: medium;
+    }
+}
+
   /* 
 --------------------- Slider ---------------------
 */
