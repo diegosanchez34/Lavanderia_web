@@ -589,7 +589,6 @@
     .services .icon-box {
         padding: 30px;
         position: relative;
-        overflow: hidden;
         margin: 0 0 40px 0;
         background: #fff;
         box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
@@ -613,12 +612,18 @@
         line-height: 1;
         margin-bottom: 15px;
         color: #0076ad;
+
     }
 
     .services .icon img {
-        height: 60px;
+        height: 100px;
         margin-bottom: 15px;
+        margin-top:-65px;
+        z-index: 500px;
+        overflow: visible ; 
+
     }
+
     
     .services .title {
         font-weight: 700;
