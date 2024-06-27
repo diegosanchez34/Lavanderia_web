@@ -635,7 +635,7 @@
     }
 
     .services .icon img {
-        height: 100px;
+        height: 150px;
         margin-bottom: 15px;
         margin-top:-65px;
         z-index: 500px;
@@ -1356,7 +1356,7 @@
 
   
   .col-md-7 {
-    padding: 20px;
+    padding: 20px0;
   }
 
   .card {
@@ -1382,11 +1382,26 @@
 
 
 #divcarousel{
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+}
+
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
-}
+    height: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    /* Modifica el tamaño de la imagen según tus necesidades */
+    width: 250px;
+  }
 
 @media (max-width: 575px) {
     
@@ -1394,12 +1409,15 @@
         display: block;
         justify-content: none;
         align-items: normal;
-        height: 600px;
-        margin-top: 30px;
+        height: 560px;
+        margin-top: 50px;
     }
     .card-text{
         font-size: medium;
     }
+    .image-container img {
+        margin-top: 30px;
+      }
 }
 
   /* 
