@@ -404,6 +404,7 @@
     
     #hero .animated {
         animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        border-radius: 25px;
     }
     
     @media (max-width: 991px) {
@@ -595,6 +596,10 @@
         .about .about-img img {
         max-width: 90%;
         }
+    }
+
+    .about img{
+        border-radius: 25px;
     }
     
     /*--------------------------------------------------------------
