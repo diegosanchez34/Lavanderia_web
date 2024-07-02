@@ -15,6 +15,7 @@
     a {
         color: #0076ad;
         text-decoration: none;
+        font-family: 'Poppins', sans-serif;
     }
     
     a:hover {
@@ -23,15 +24,20 @@
     }
     
     h1,
-    h2,
     h3,
     h4,
     h5,
-    h6,
-    .font-primary {
-        font-family: "Poppins", sans-serif;
+    h6{
+        font-family: 'Poppins', sans-serif;
     }
     
+    h2, p{
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+
+
+
     /*--------------------------------------------------------------
     # Back to top button
     --------------------------------------------------------------*/
@@ -496,6 +502,7 @@
         font-size: 32px;
         font-weight: 700;
         color: rgb(42, 63, 75);
+        font-family: "Poppins", sans-serif;
     }
     
     .section-title p::after {
@@ -818,7 +825,6 @@
     .faq .faq-list .question {
         display: block;
         position: relative;
-        font-family: #eb5d1e;
         font-size: 18px;
         line-height: 24px;
         font-weight: 400;
@@ -839,6 +845,14 @@
     .faq .faq-list p {
         margin-bottom: 0;
         padding: 10px 0 0 25px;
+    }
+    
+    .faq .faq-list span {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .faq .faq-list li {
+        font-family: 'Montserrat', sans-serif;
     }
     
     .faq .faq-list .icon-show {
@@ -1198,7 +1212,7 @@
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 0;
-        font-family: "Raleway", sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: rgb(75, 75, 75);
     }
     
