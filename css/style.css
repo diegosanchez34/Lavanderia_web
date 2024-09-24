@@ -670,7 +670,10 @@
     /*--------------------------------------------------------------
     # Portfolio
     --------------------------------------------------------------*/
-    
+    .portfolio {
+        background-color: #f0faff;
+    }
+
     .portfolio .portfolio-item {
         margin-bottom: 30px;
     }
@@ -714,7 +717,7 @@
     
     .portfolio .portfolio-wrap::before {
         content: "";
-        background: rgba(122, 105, 96, 0.6);
+        background: rgba(81, 105, 131, 0.6);
         position: absolute;
         left: 100%;
         right: 0;
