@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).catch(error => {
             loadingElement.style.display = 'none';
+            console.log('Error:', error); // Agregado para depuración
             errorElement.textContent = error.message;
             errorElement.style.display = 'block';
         });
