@@ -1551,10 +1551,57 @@
     font-size: 30px; /* Ajusta el tamaño de las flechas */
     color: white; /* Ajusta el color de las flechas */
     z-index: 3; /* Asegura que los botones estén por encima de las imágenes */
-    opacity: 0.7;
+    opacity: 0.3;
   }
   
   .slider-control:hover {
     opacity: 1; /* Efecto de opacidad al pasar el cursor */
   }
-  
+
+/*--------------------------------------------------------------
+# Catalogo
+--------------------------------------------------------------*/
+.catalogo-slider {
+    padding-top: 85px; /* Espacio extra arriba */
+    padding-bottom: 85px; /* Espacio extra abajo */
+    overflow: visible; /* Permite que las imágenes sobresalgan */
+}
+
+.catalogo {
+    overflow: visible; /* Asegura que el contenedor principal no corte las imágenes */
+    position: relative; /* Necesario para mantener el control del stacking */
+}
+
+.swiper-wrapper {
+    overflow: visible; /* Permite que las imágenes de la diapositiva también sobresalgan */
+}
+
+
+.catalogo .catalogo-slider .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.catalogo .catalogo-slider .swiper-slide.swiper-slide-active img {
+    opacity: 1;
+    transform: scale(1.8);
+    transition: all 0.3s ease;
+}
+
+.descarga {
+    background: #0076ad;
+    border: 0;
+    padding: 12px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.descarga:hover {
+    background: #0076ad;
+}
