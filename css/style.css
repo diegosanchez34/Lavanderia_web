@@ -1567,16 +1567,6 @@
     overflow: visible; /* Permite que las imágenes sobresalgan */
 }
 
-.catalogo {
-    overflow: visible; /* Asegura que el contenedor principal no corte las imágenes */
-    position: relative; /* Necesario para mantener el control del stacking */
-}
-
-.swiper-wrapper {
-    overflow: visible; /* Permite que las imágenes de la diapositiva también sobresalgan */
-}
-
-
 .catalogo .catalogo-slider .swiper-slide img {
     opacity: 0.5;
     transition: 0.3s;
