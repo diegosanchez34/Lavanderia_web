@@ -376,9 +376,11 @@
     #hero {
         width: 100%;
         height: 70vh;
-        background-image: url('../img/banners/Banner.webp');
-        background-size: cover;
-        background-position: center;
+        background: 
+            url('../img/banners/Banner.webp'),
+            linear-gradient(159deg, rgba(29, 167, 223, 1) 0%, rgba(16, 30, 116, 1) 80%, rgba(16, 20, 107, 1) 100%);            
+        background-size: cover, cover; /* Ajusta el tamaño de ambas capas */
+        background-position: center, center; /* Ajusta la posición de ambas capas */
         border-bottom: 2px solid #f0faff;
         margin: 72px 0 -72px 0;
     }
@@ -436,7 +438,7 @@
 
     @media (max-width: 991px) {
         #hero {
-        background-image: url('../img/banners/Fondo.webp');
+        background: linear-gradient(159deg, rgba(29,167,223,1) 0%, rgba(16,30,116,1) 80%, rgba(16,20,107,1) 100%);
         margin: 25px 0 -72px 0;
         height: auto; 
         }
