@@ -1659,6 +1659,7 @@
 /*--------------------------------------------------------------
 # News
 --------------------------------------------------------------*/
+/* Estilos base para el contenedor y los iframes */
 .news-slider-container {
     position: relative;
     max-width: 1280px;
@@ -1681,35 +1682,30 @@
     border: none;
 }
 
-.news-slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    transition: background-color 0.3s;
+/* Breakpoint para tablets grandes y pantallas medianas */
+@media screen and (max-width: 1024px) {
+    .news-slider-slide iframe {
+        height: 576px; /* 16:9 ratio para 1024px de ancho */
+    }
 }
 
-.news-slider-button:hover {
-    background-color: rgba(255, 255, 255, 1);
+/* Breakpoint para tablets */
+@media screen and (max-width: 768px) {
+    .news-slider-slide iframe {
+        height: 432px; /* 16:9 ratio para 768px de ancho */
+    }
 }
 
-.news-slider-prev {
-    left: 20px;
+/* Breakpoint para móviles grandes */
+@media screen and (max-width: 576px) {
+    .news-slider-slide iframe {
+        height: 324px; /* 16:9 ratio para 576px de ancho */
+    }
 }
 
-.news-slider-next {
-    right: 20px;
-}
-
-.news-slider-hidden {
-    display: none;
+/* Breakpoint para móviles pequeños */
+@media screen and (max-width: 375px) {
+    .news-slider-slide iframe {
+        height: 211px; /* 16:9 ratio para 375px de ancho */
+    }
 }
