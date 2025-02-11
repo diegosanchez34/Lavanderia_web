@@ -273,6 +273,36 @@
             }
         });
         
+         /**
+         * News Slider
+         */
+
+         const newsSlider = document.querySelector('.news-slider-wrapper');
+        const prevButton = document.querySelector('.news-slider-prev');
+        const nextButton = document.querySelector('.news-slider-next');
+        let currentVideo = 0;
+
+        function updateButtons() {
+            prevButton.classList.toggle('news-slider-hidden', currentVideo === 0);
+            nextButton.classList.toggle('news-slider-hidden', currentVideo === 1);
+        }
+
+        function slide(direction) {
+            if (direction === 'next' && currentVideo === 0) {
+                currentVideo = 1;
+                newsSlider.style.transform = 'translateX(-100%)';
+            } else if (direction === 'prev' && currentVideo === 1) {
+                currentVideo = 0;
+                newsSlider.style.transform = 'translateX(0)';
+            }
+            updateButtons();
+        }
+
+        prevButton.addEventListener('click', () => slide('prev'));
+        nextButton.addEventListener('click', () => slide('next'));
+
+        // Inicializar el estado de los botones
+        updateButtons();
                 
     
     })()

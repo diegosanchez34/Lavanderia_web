@@ -1651,3 +1651,65 @@
 .descarga:hover {
     background: #0076ad;
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+.news-slider-container {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.news-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-slider-slide {
+    min-width: 100%;
+}
+
+.news-slider-slide iframe {
+    width: 100%;
+    height: 720px;
+    border: none;
+}
+
+.news-slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.news-slider-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.news-slider-prev {
+    left: 20px;
+}
+
+.news-slider-next {
+    right: 20px;
+}
+
+.news-slider-hidden {
+    display: none;
+}
