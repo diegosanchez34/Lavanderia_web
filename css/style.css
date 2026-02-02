@@ -1,5 +1,4 @@
-
-    /*--------------------------------------------------------------
+/*--------------------------------------------------------------
     # General
     --------------------------------------------------------------*/
     body {
@@ -1741,4 +1740,66 @@
     .news-slider-slide iframe {
         height: 211px; /* 16:9 ratio para 375px de ancho */
     }
+}
+
+/*--------------------------------------------------------------
+# Accordion Slider
+--------------------------------------------------------------*/
+.accordion-slider {
+  display: flex;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  margin: 70px 0 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item:hover {
+  flex: 5; /* Expands the item on hover */
+}
+
+.accordion-item h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease 0.3s;
+}
+
+.accordion-item:hover h3 {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .accordion-item:nth-child(n+9) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-item:nth-child(n+6) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-item:nth-child(n+4) {
+    display: none;
+  }
+  .accordion-slider {
+    height: 300px;
+  }
 }
